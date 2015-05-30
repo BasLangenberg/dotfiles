@@ -1,6 +1,8 @@
 " General Settings
 set nocompatible
-
+set enc=utf-8
+set fileencoding=utf-8
+set clipboard=unnamedplus
 filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
