@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# My personal aliasses
+alias ll='ls -latr'
+alias gs='git status'
