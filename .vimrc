@@ -10,6 +10,12 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'tpope/vim-fugitive'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'scrooloose/nerdtree'
+Plugin 'kien/ctrlp'
 
 call vundle#end()
 
@@ -23,5 +29,7 @@ set incsearch
 set hlsearch
 
 syntax on
+set background=dark
+colorscheme solarized
 
 set mouse=a
