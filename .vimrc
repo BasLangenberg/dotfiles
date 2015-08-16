@@ -15,7 +15,7 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'tpope/vim-fugitive'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'scrooloose/nerdtree'
-Plugin 'kien/ctrlp'
+Plugin 'kien/ctrlp.vim'
 
 call vundle#end()
 
