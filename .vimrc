@@ -20,6 +20,8 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-surround'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'marijnh/tern_for_vim'
 
 call vundle#end()
 
@@ -33,13 +35,19 @@ set showcmd
 set incsearch
 set hlsearch
 
+" Colours, Syntax, Etc
 syntax on
 set background=dark
 colorscheme solarized
 set laststatus=2
-
-set mouse=a
-let g:vim_markdown_folding_disabled=1
 let g:airline_theme='solarized'
+
+" Enable mouse, cause I occasionally touch it anyway
+set mouse=a
+
+" Disable markdown folding, it's unworkable for me
+let g:vim_markdown_folding_disabled=1
+
+" Open NERDTree /w <C-n>
 map <C-n> :NERDTreeToggle<CR>
 
