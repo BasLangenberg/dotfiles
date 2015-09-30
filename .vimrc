@@ -4,6 +4,11 @@ set enc=utf-8
 set fileencoding=utf-8
 set clipboard=unnamedplus
 
+" Tabs setup
+set expandtab
+set shiftwidth=2
+set softtabstop=2
+
 " Plugins
 filetype off
 
