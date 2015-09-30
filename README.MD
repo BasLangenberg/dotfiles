@@ -21,3 +21,6 @@ In order to make this installation reproducable, (Packages and such) the followi
     
     # Reinstall packages from list
     #/cygdrive/c/cygwin/setup -q --packages `sed -e :a -e '$!N; s/\n/,/; ta' packages.txt`
+
+## Notes on Vim configuration file
+I've used [this url](http://tilvim.com/2013/08/21/js-autocomplete.html) as a basis for the autocomplete. This need to be redone manually in case of a reinstall.
