@@ -27,6 +27,8 @@ Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-surround'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'marijnh/tern_for_vim'
+Plugin 'rodjek/vim-puppet'
+Plugin 'scrooloose/syntastic'
 
 call vundle#end()
 
