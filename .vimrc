@@ -1,4 +1,4 @@
-" General Settings
+   General Settings
 set nocompatible
 set enc=utf-8
 set fileencoding=utf-8
@@ -28,6 +28,8 @@ Plugin 'tpope/vim-surround'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'marijnh/tern_for_vim'
 Plugin 'othree/javascript-libraries-syntax.vim'
+Plugin 'rodjek/vim-puppet'
+Plugin 'scrooloose/syntastic'
 
 call vundle#end()
 
@@ -57,3 +59,6 @@ let g:vim_markdown_folding_disabled=1
 " Open NERDTree /w <C-n>
 map <C-n> :NERDTreeToggle<CR>
 
+" Make vim-airline display the open buffers by filename only
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#fnamemod = ':t'
