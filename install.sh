@@ -11,7 +11,7 @@
 ln -sfv "$HOME/dotfiles/.bashrc" ~
 ln -sfv "$HOME/dotfiles/.vimrc" ~
 ln -sfv "$HOME/dotfiles/.bash_profile" ~
-ln -sfv "$HOME/dorfiles/.tmux.conf" ~
+ln -sfv "$HOME/dotfiles/.tmux.conf" ~
 ln -sfv "$HOME/dotfiles/.bash_prompt" ~
 ln -sfv "$HOME/dotfiles/.bash_alias" ~
 
