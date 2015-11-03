@@ -1,4 +1,4 @@
-   General Settings
+" General Settings
 set nocompatible
 set enc=utf-8
 set fileencoding=utf-8
