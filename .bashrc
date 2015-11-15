@@ -4,6 +4,7 @@ source ~/.bash_prompt
 source ~/.bash_alias
 
 # Devtools:
+export EDITOR=vim
 export PATH="$PATH:$HOME/.rvm/bin:/usr/local/heroku/bin" 
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
