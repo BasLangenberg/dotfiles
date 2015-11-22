@@ -25,7 +25,7 @@ In order to make this installation reproducable, (Packages and such) the followi
 ## Notes on Vim configuration file
 I've used [this url](http://tilvim.com/2013/08/21/js-autocomplete.html) as a basis for the autocomplete. This need to be redone manually in case of a reinstall.
 
-More details on the recently added leader key usage can be found (here)[http://sheerun.net/2014/03/21/how-to-boost-your-vim-productivity/].
+More details on the recently added leader key usage can be found [ here ]( http://sheerun.net/2014/03/21/how-to-boost-your-vim-productivity/ ).
 
 ## Notes on Ruby
 I''m using rbenv, as RVM is''nt really my cup of tea. [Installed using the GoRails website''s instructions](https://gorails.com/setup/ubuntu/15.10)
