@@ -30,6 +30,7 @@ Plugin 'marijnh/tern_for_vim'
 Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'rodjek/vim-puppet'
 Plugin 'scrooloose/syntastic'
+Plugin 'terryma/vim-expand-region'
 
 call vundle#end()
 
@@ -62,3 +63,25 @@ map <C-n> :NERDTreeToggle<CR>
 " Make vim-airline display the open buffers by filename only
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
+
+" Keymaps
+" Map leader to space
+let mapleader = "\<Space>"
+
+" Open CtrlP
+nnoremap <Leader>o :CtrlP<CR>
+
+" Save
+nnoremap <Leader>w :w<CR>
+
+" Copy / Paste
+vmap <Leader>y "+y
+vmap <Leader>d "+d
+nmap <Leader>p "+p
+nmap <Leader>P "+P
+vmap <Leader>p "+p
+vmap <Leader>P "+P
+
+" Vim expand region settings
+vmap v <Plug>(expand_region_expand)
+vmap <C-v> <Plug>(expand_region_shrink)
