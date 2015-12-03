@@ -31,6 +31,7 @@ Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'rodjek/vim-puppet'
 Plugin 'scrooloose/syntastic'
 Plugin 'terryma/vim-expand-region'
+Plugin 'rking/ag.vim'
 
 call vundle#end()
 
@@ -64,6 +65,9 @@ map <C-n> :NERDTreeToggle<CR>
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
 
+" vim ag config
+let g:ag_working_path_mode="r"
+
 " Keymaps
 " Map leader to space
 let mapleader = "\<Space>"
@@ -85,3 +89,21 @@ vmap <Leader>P "+P
 " Vim expand region settings
 vmap v <Plug>(expand_region_expand)
 vmap <C-v> <Plug>(expand_region_shrink)
+
+" Buffer movement
+nmap <Leader>n :bn<CR>
+vmap <Leader>n :bn<CR>
+nmap <Leader>m :bp<CR>
+vmap <Leader>m :bp<CR>
+
+" Git shortcuts, requires vim-fugitive
+nmap <Leader>s :Gstatus<CR>
+vmap <Leader>s :Gstatus<CR>
+nmap <Leader>c :Gcommit<CR>
+vmap <Leader>c :Gcommit<CR>
+
+" This eases movement between splits
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
