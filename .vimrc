@@ -95,6 +95,8 @@ nmap <Leader>n :bn<CR>
 vmap <Leader>n :bn<CR>
 nmap <Leader>m :bp<CR>
 vmap <Leader>m :bp<CR>
+nmap <Leader>x :bd<CR>
+vmap <Leader>x :bd<CR>
 
 " Git shortcuts, requires vim-fugitive
 nmap <Leader>s :Gstatus<CR>
