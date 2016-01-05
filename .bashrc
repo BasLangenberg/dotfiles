@@ -9,3 +9,7 @@ export PATH="$PATH:$HOME/.rvm/bin:/usr/local/heroku/bin"
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
+
+# Speed up git prompt...
+export GIT_PS1_SHOWDIRTYSTATE=
+export GIT_PS1_SHOWUNTRACKEDFILES=

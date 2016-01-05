@@ -68,6 +68,10 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 " vim ag config
 let g:ag_working_path_mode="r"
 
+" Enable underline
+set cursorline
+hi CursorLine cterm=NONE ctermbg=darkblue ctermfg=white guibg=darkblue ctermfg=white
+
 " Keymaps
 " Map leader to space
 let mapleader = "\<Space>"
