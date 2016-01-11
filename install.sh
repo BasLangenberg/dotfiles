@@ -14,7 +14,7 @@ ln -sfv "$HOME/dotfiles/.bash_profile" ~
 ln -sfv "$HOME/dotfiles/.tmux.conf" ~
 ln -sfv "$HOME/dotfiles/.bash_prompt" ~
 ln -sfv "$HOME/dotfiles/.bash_alias" ~
-
+ln -sfv "$HOME/dotfiles/.gitconfig" ~
 
 # Setup Vundle (For vim plugins)
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
