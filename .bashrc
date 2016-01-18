@@ -7,7 +7,10 @@ source ~/.bash_alias
 export EDITOR=vim
 export PATH="$PATH:$HOME/.rvm/bin:/usr/local/heroku/bin" 
 export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+if [ $HOMEDRIVE != "C:" ]
+  then
+    eval "$(rbenv init -)"
+fi
 export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
 
 # Speed up git prompt...
