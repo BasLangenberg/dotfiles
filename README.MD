@@ -30,5 +30,14 @@ More details on the recently added leader key usage can be found [ here ]( http:
 ## Notes on Ruby
 I''m using rbenv, as RVM is''nt really my cup of tea. [Installed using the GoRails website''s instructions](https://gorails.com/setup/ubuntu/15.10)
 
+## Notes on zsh
+I''m starting to use zsh. Installation steps: (Ubuntu)
+
+ - install zsh
+ - install oh my zsh
+ - install font-awesome
+ - replace / link config file
+ - done
+
 ## ToDo
-Wrapper script for easy setup of Ruby, Vim and all other dependencies when I reload a Linux box
+Wrapper script for easy setup of Ruby, Vim and all other dependencies when I reload a Linux box. Documentation has been written to quickly execute all steps in Ubuntu Linux.
