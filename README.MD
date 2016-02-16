@@ -2,7 +2,7 @@
 
 This is my personal dotfile repo. I'm using this as a base for new installations or system I frequently work on.
 
-This repository used bash-it, but in the end this was to heavy for my uses. I'm working with my own configuration files while contemplating a possible move to zsh.
+This repository required bash-it in the past, but in the end this was to heavy for my use. I'm working with my own configuration files while contemplating a possible move to zsh.
 
 Feel free to use this, although there will be much better examples over on Github. This is how *i* like it, and it's standing on the shoulders of giants.
 
@@ -31,4 +31,4 @@ More details on the recently added leader key usage can be found [ here ]( http:
 I''m using rbenv, as RVM is''nt really my cup of tea. [Installed using the GoRails website''s instructions](https://gorails.com/setup/ubuntu/15.10)
 
 ## ToDo
-Wrapper script for easy setup of Ruby, Vim and all other dependencies whenether I reload a Linux box
+Wrapper script for easy setup of Ruby, Vim and all other dependencies when I reload a Linux box

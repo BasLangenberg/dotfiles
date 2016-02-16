@@ -44,7 +44,7 @@ prompt_git() {
 
                 # check for stashed files
                 if $(git rev-parse --verify refs/stash &>/dev/null); then
-                    s="$s$";
+                    s="$s $";
                 fi
 
             fi
@@ -132,13 +132,12 @@ set_prompts() {
     # set the terminal title to the current working directory
     PS1="\[\033]0;\w\007\]"
 
-    PS1+="\[$userStyle\]\h" # hostname
+    PS1+="\u@\h" # hostname
     PS1+="\[$reset$white\]: "
     PS1+="\[$green\]\w" # working directory
     PS1+="\$(prompt_git \"$white on $cyan\")" # git repository details
-    PS1+="\n" # new line
-    PS1+="\[$userStyle\]\u"
-    PS1+="\[$reset$white\]\$ \[$reset\]" # $ (and reset color)
+    #PS1+="\n" # new line
+    PS1+="\[$reset$white\] \$ \[$reset\]" # $ (and reset color)
 
     export PS1
 }
