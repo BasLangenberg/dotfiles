@@ -7,11 +7,11 @@ source ~/.bash_alias
 export EDITOR=vim
 export PATH="$PATH:$HOME/.rvm/bin:/usr/local/heroku/bin" 
 export PATH="$HOME/.rbenv/bin:$PATH"
-if [ $HOMEDRIVE != "C:" ]
+if [ -z ${HOMEDRIVE+x} ]
   then
     eval "$(rbenv init -)"
 fi
-export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
+export PATH="$HOME/.local/bin:$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
 
 # Speed up git prompt...
 export GIT_PS1_SHOWDIRTYSTATE=
