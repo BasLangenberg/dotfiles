@@ -32,6 +32,8 @@ Plugin 'rodjek/vim-puppet'
 Plugin 'scrooloose/syntastic'
 Plugin 'terryma/vim-expand-region'
 Plugin 'rking/ag.vim'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
 
 call vundle#end()
 
@@ -95,10 +97,10 @@ vmap v <Plug>(expand_region_expand)
 vmap <C-v> <Plug>(expand_region_shrink)
 
 " Buffer movement
-nmap <Leader>n :bn<CR>
-vmap <Leader>n :bn<CR>
-nmap <Leader>m :bp<CR>
-vmap <Leader>m :bp<CR>
+nmap <Leader>n :bp<CR>
+vmap <Leader>n :bp<CR>
+nmap <Leader>m :bn<CR>
+vmap <Leader>m :bn<CR>
 nmap <Leader>x :bd<CR>
 vmap <Leader>x :bd<CR>
 
@@ -116,3 +118,11 @@ nnoremap <C-H> <C-W><C-H>
 
 " Toggle paste
 set pastetoggle=<F12>
+
+" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="<c-d>"
+let g:UltiSnipsJumpForwardTrigger="<c-j>"
+let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
