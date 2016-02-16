@@ -35,7 +35,6 @@ I''m starting to use zsh. Installation steps: (Ubuntu)
 
  - install zsh
  - install oh my zsh
- - install font-awesome
  - replace / link config file
  - done
 
