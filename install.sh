@@ -7,6 +7,7 @@
 
 # TODO:
 #  - Add support for automatically installing bash-it
+#  - Install zsh
 
 ln -sfv "$HOME/dotfiles/.bashrc" ~
 ln -sfv "$HOME/dotfiles/.vimrc" ~
