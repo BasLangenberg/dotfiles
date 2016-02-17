@@ -35,4 +35,4 @@ This installation has been executed on a Ubuntu 15.10 box on 12-02-2015
     gem install bundler
 
     # Python Packages (My goto programming language)
-    sudo apt-get install python python-dev python-pip virtualenv
+    sudo apt-get install python python-dev python-pip python-virtualenv
