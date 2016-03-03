@@ -25,7 +25,7 @@ This installation has been executed on a Ubuntu 15.10 box on 12-02-2015
 
     sudo apt-get update
     sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev python-software-properties libffi-dev
-cd
+    cd
     git clone git://github.com/sstephenson/rbenv.git .rbenv
     git clone git://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
     git clone https://github.com/sstephenson/rbenv-gem-rehash.git ~/.rbenv/plugins/rbenv-gem-rehash
@@ -35,4 +35,4 @@ cd
     gem install bundler
 
     # Python Packages (My goto programming language)
-    sudo apt-get install python python-dev python-pip virtualenv
+    sudo apt-get install python python-dev python-pip python-virtualenv
