@@ -7,6 +7,10 @@ This installation has been executed on a Ubuntu 15.10 box on 12-02-2015
     # Install required software
     sudo apt-get install vim git tmux
 
+    # On Ubuntu 16.04, the Vim in the repo's doesn't work with YCM. 
+    # Compile by hand: 
+    # https://github.com/Valloric/YouCompleteMe/wiki/Building-Vim-from-source
+
     # Clone repository
     git clone https://Github.com/BasLangenberg/Dotfiles.git dotfiles
 
@@ -36,3 +40,11 @@ This installation has been executed on a Ubuntu 15.10 box on 12-02-2015
 
     # Python Packages (My goto programming language)
     sudo apt-get install python python-dev python-pip python-virtualenv
+
+    # Install zsh
+    git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+    sudo apt install zsh
+    ln -sfv "$HOME/dotfiles/.zshrc" ~
+    chsh
+
+
