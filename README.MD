@@ -28,7 +28,7 @@ I've used [this url](http://tilvim.com/2013/08/21/js-autocomplete.html) as a bas
 More details on the recently added leader key usage can be found [ here ]( http://sheerun.net/2014/03/21/how-to-boost-your-vim-productivity/ ).
 
 ## Notes on Ruby
-I''m using rbenv, as RVM is''nt really my cup of tea. [Installed using the GoRails website''s instructions](https://gorails.com/setup/ubuntu/15.10)
+I''m using rbenv, as RVM is''nt really my cup of tea. [Installed using the GoRails website''s instructions for Ubuntu](https://gorails.com/setup/ubuntu/15.10) / [Digital Ocean''s tutorial for RHEL / Centos](https://www.digitalocean.com/community/tutorials/how-to-install-ruby-on-rails-with-rbenv-on-centos-7)
 
 ## Notes on zsh
 I''m starting to use zsh. Installation steps: (Ubuntu)
