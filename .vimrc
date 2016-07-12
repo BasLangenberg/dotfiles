@@ -35,6 +35,7 @@ Plugin 'terryma/vim-expand-region'
 Plugin 'rking/ag.vim'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
+Plugin 'christoomey/vim-tmux-navigator'
 
 call vundle#end()
 
