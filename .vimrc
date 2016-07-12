@@ -127,3 +127,6 @@ let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
+
+" Don't check Java files for syntax automatically
+let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['java'] }
