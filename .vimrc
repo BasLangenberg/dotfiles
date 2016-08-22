@@ -141,3 +141,5 @@ let g:virtualenv_directory = '/home/bas/virtual_envs'
 
 " Paste toggle
 :set pastetoggle=<F10>
+" Don't check Java files for syntax automatically
+let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['java'] }
