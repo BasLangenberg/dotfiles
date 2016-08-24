@@ -36,6 +36,12 @@ Plugin 'rking/ag.vim'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'jmcantrell/vim-virtualenv'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+Plugin 'vadv/vim-chef'
+Plugin 'tpope/vim-repeat'
 
 call vundle#end()
 
@@ -45,6 +51,7 @@ filetype plugin indent on
 set backspace=indent,eol,start
 set ruler
 set number
+set relativenumber
 set showcmd
 set incsearch
 set hlsearch
@@ -129,5 +136,10 @@ let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
 
+" Set virtualenv dir
+let g:virtualenv_directory = '/home/bas/virtual_envs'
+
+" Paste toggle
+:set pastetoggle=<F10>
 " Don't check Java files for syntax automatically
 let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['java'] }
