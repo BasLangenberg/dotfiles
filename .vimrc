@@ -55,6 +55,18 @@ set relativenumber
 set showcmd
 set incsearch
 set hlsearch
+set showmode
+
+set noswapfile                  " Don't use swapfile
+set nobackup					          " Don't create annoying backup files
+set nowritebackup
+set ignorecase                  " Search case insensitive...
+set smartcase                   " ... but not when search pattern contains upper case characters
+
+set fileformats=unix,dos,mac    " Prefer Unix over Windows over OS 9 formats
+
+au FocusLost * :wa              " Set vim to save the file on focus out.
+nnoremap <leader>, :nohlsearch<CR>
 
 " Colours, Syntax, Etc
 syntax on
