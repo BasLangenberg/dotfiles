@@ -42,6 +42,7 @@ Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
 Plugin 'vadv/vim-chef'
 Plugin 'tpope/vim-repeat'
+Plugin 'chriskempson/base16'
 
 call vundle#end()
 
@@ -58,7 +59,7 @@ set hlsearch
 set showmode
 
 set noswapfile                  " Don't use swapfile
-set nobackup					          " Don't create annoying backup files
+set nobackup	                " Don't create annoying backup files
 set nowritebackup
 set ignorecase                  " Search case insensitive...
 set smartcase                   " ... but not when search pattern contains upper case characters
@@ -70,10 +71,11 @@ nnoremap <leader>, :nohlsearch<CR>
 
 " Colours, Syntax, Etc
 syntax on
-set background=dark
-colorscheme solarized
+" set background=dark
+let base16colorspace=256
 set laststatus=2
-let g:airline_theme='solarized'
+let g:airline_theme='base16_monokai'
+" colorscheme base16_monokai
 
 " Enable mouse, cause I occasionally touch it anyway
 set mouse=a
@@ -93,7 +95,7 @@ let g:ag_working_path_mode="r"
 
 " Enable underline
 set cursorline
-hi CursorLine cterm=NONE ctermbg=darkblue ctermfg=white guibg=darkblue ctermfg=white
+" hi CursorLine cterm=NONE ctermbg=darkblue ctermfg=white guibg=darkblue ctermfg=white
 
 " Keymaps
 " Map leader to space
