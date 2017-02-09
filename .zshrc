@@ -93,3 +93,32 @@ BASE16_SHELL=$HOME/.config/base16-shell/
 eval $(thefuck --alias)
 
 PATH=/home/bas/idea-IU-162.2032.8/bin:${PATH}
+
+# Powerline
+function powerline_precmd() {
+    PS1="$(~/powerline-shell/powerline-shell.py $? --shell zsh 2> /dev/null)"
+}
+
+function install_powerline_precmd() {
+  for s in "${precmd_functions[@]}"; do
+    if [ "$s" = "powerline_precmd" ]; then
+      return
+    fi
+  done
+  precmd_functions+=(powerline_precmd)
+}
+
+if [ "$TERM" != "linux" ]; then
+    install_powerline_precmd
+fi
+
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f /home/bas/gcloud-sdk/path.zsh.inc ]; then
+  source '/home/bas/gcloud-sdk/path.zsh.inc'
+fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f /home/bas/gcloud-sdk/completion.zsh.inc ]; then
+  source '/home/bas/gcloud-sdk/completion.zsh.inc'
+fi
