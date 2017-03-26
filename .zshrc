@@ -1,11 +1,11 @@
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/bas/.oh-my-zsh
+export ZSH=/home/bas/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="pygmalion"
+ZSH_THEME="powerline"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -53,7 +53,7 @@ plugins=(git python docker docker-compose pylint ssh-agent tmux tugboat ubuntu v
 
 # User configuration
 
-  export PATH="/home/bas/.local/bin:/home/bas/.rbenv/plugins/ruby-build/bin:/home/bas/.rbenv/shims:/home/bas/.rbenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/bas/.rvm/bin:/usr/local/heroku/bin"
+export PATH="/home/bas/.local/bin:/home/bas/.rbenv/plugins/ruby-build/bin:/home/bas/.rbenv/shims:/home/bas/.rbenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/bas/.rvm/bin:/usr/local/heroku/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -88,30 +88,11 @@ EDITOR='vim'
 alias ll="ls -latr"
 
 BASE16_SHELL=$HOME/.config/base16-shell/
-[ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
+#[ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
 
 eval $(thefuck --alias)
 
 PATH=/home/bas/idea-IU-162.2032.8/bin:${PATH}
-
-# Powerline
-function powerline_precmd() {
-    PS1="$(~/powerline-shell/powerline-shell.py $? --shell zsh 2> /dev/null)"
-}
-
-function install_powerline_precmd() {
-  for s in "${precmd_functions[@]}"; do
-    if [ "$s" = "powerline_precmd" ]; then
-      return
-    fi
-  done
-  precmd_functions+=(powerline_precmd)
-}
-
-if [ "$TERM" != "linux" ]; then
-    install_powerline_precmd
-fi
-
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f /home/bas/gcloud-sdk/path.zsh.inc ]; then
